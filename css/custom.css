@@ -6,7 +6,7 @@ body {
 }
 
 a {
-    color: yellowgreen;
+    color: #EB8249;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -14,12 +14,55 @@ a {
 
 a:hover,
 a:focus {
-    color: forestgreen;
+    color: #EB8249;
 }
 
 p {
     font-size: 16px;
     line-height: 1.5;
+}
+button {
+    position: relative;
+    background-color: #EB8249;
+    border: none;
+    border-radius: 20px;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button:span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button:after {
+    content: "";
+    background: #EB8249;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
 }
 
 header {
@@ -96,7 +139,7 @@ header .header-content .header-content-inner p {
 
 .intro {
 	color: #fff;
-    background-color: yellowgreen;
+    background-color: #EB8249;
     padding: 70px 0;
     text-align: center;
 }
@@ -169,7 +212,7 @@ header .header-content .header-content-inner p {
 
 .page-footer .contact {
 	padding: 100px 0;
-	background-color: yellowgreen;
+	background-color: #EB8249;
 	color: #fff;
 	}
 
@@ -195,14 +238,14 @@ header .header-content .header-content-inner p {
 
 .navbar-default {
     border-color: rgba(34,34,34,.05);
-    background-color: #fff;
+    background-color: #fcf5e8;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
 }
 
 .navbar-default .navbar-header .navbar-brand {
-    color: yellowgreen;
+    color: #EB8249;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -217,12 +260,12 @@ header .header-content .header-content-inner p {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: yellowgreen;
+    color: #EB8249;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: yellowgreen!important;
+    color: #ffffff!important;
     background-color: transparent;
 }
 
@@ -265,7 +308,7 @@ header .header-content .header-content-inner p {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         letter-spacing: 0;
-        color: yellowgreen;
+        color: #EB8249;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
@@ -280,7 +323,7 @@ header .header-content .header-content-inner p {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: yellowgreen;
+        color: #EB8249;
     }
 }
 
@@ -338,9 +381,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: yellowgreen;
+    border-color: #EB8249;
     color: #fff;
-    background-color: yellowgreen;
+    background-color: #EB8249;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -352,9 +395,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: limegreen;
+    border-color: #EB8249;
     color: #fff;
-    background-color: limegreen;
+    background-color: #EB8249;
 }
 
 .btn-primary:active,
@@ -381,12 +424,12 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: yellowgreen;
-    background-color: yellowgreen;
+    border-color: #EB8249;
+    background-color: #EB8249;
 }
 
 .btn-primary .badge {
-    color: yellowgreen;
+    color: #EB8249;
     background-color: #fff;
 }
 
@@ -423,9 +466,9 @@ img::-moz-selection {
 }
 
 .text-primary {
-    color: yellowgreen;
+    color: #EB8249;
 }
 
 .bg-primary {
-    background-color: yellowgreen;
+    background-color: #EB8249;
 }
