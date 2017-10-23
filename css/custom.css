@@ -21,6 +21,51 @@ p {
     font-size: 16px;
     line-height: 1.5;
 }
+
+a.button {
+    position: relative;
+    background-color: #EB8249;
+    border: none;
+    border-radius: 20px;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+a.button:span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+a.button:after {
+    content: "";
+    background: #EB8249;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+a.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+/*//////////////////////////////////////////////////////////////////////////*/
 button {
     position: relative;
     background-color: #EB8249;
