@@ -4,10 +4,11 @@ var grid = [];
 
 var current;
 var stack = [];
+var countdown = 5000;
 
 function setup() {
   createCanvas(801,801);
-  frameRate(4)
+  frameRate(8);
   cols = floor(width/w);
   rows = floor(height/w);
 
@@ -41,6 +42,14 @@ function draw() {
   }
   else if (stack.length > 0){
     current = stack.pop();
+  }
+  else if (stack.length == 0){
+    countdown = countdown - 1000/4;
+    if(countdown <=0)
+    {
+      location.reload();
+      saveCanvas(str(width)+'x'+str(height),'png');
+    }
   }
 }
 
