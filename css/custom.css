@@ -21,7 +21,7 @@ p {
     font-size: 16px;
     line-height: 1.5;
 }
-
+/*//////////////////////////////////////////////////////////////////////////*/
 a.button {
     position: relative;
     background-color: #EB8249;
@@ -51,8 +51,6 @@ a.button:after {
     background: #EB8249;
     display: block;
     position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
     margin-left: -20px!important;
     margin-top: -120%;
     opacity: 0;
