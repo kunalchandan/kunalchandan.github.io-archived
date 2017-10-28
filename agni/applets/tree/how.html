@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Tree Explained</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">Tree <span>by Kunal</span></a></div>
+				<a href="../../menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="../../generic.html">Generic</a></li>
+					<li><a href="../../elements.html">Elements</a></li>
+				</ul>
+			</nav>
+
+		<!-- One -->
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>Fractal Tree</p>
+						<h2>Behind the Scenes of the Fractal tree</h2>
+					</header>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<p>DANK CODE</p>
+								<h2>Fractal Recursive Tree</h2>
+							</header>
+							<p>This is the Javascript that makes up the Fractal tree using p5.js </br>
+							There are problems with indenting and HTML, so please copy and paste this code into any IDE and use the auto indent function.</p>
+
+							<code>var length = 200;</br></code>
+							<code>var PI = 3.14159265358979323846;</br></code>
+							<code>var TWO_PI = PI*2;</br></code>
+							<code></br></code>
+							<code>var angle = 0;</br></code>
+							<code>var slider;</br></code>
+							<code></br></code>
+							<code>function setup() {</br></code>
+							<code>createCanvas(400, 400);</br></code>
+							<code>slider = createSlider(0, TWO_PI, PI / 4, 0.01);</br></code>
+							<code>}</br></code>
+							<code></br></code>
+							<code>function draw() {</br></code>
+							<code>background(51);</br></code>
+							<code>angle = slider.value();</br></code>
+							<code>stroke(255);</br></code>
+							<code>translate(200, height);</br></code>
+							<code>branch(100);</br></code>
+							<code></br></code>
+							<code>}</br></code>
+							<code></br></code>
+							<code>function branch(len) {</br></code>
+							<code>line(0, 0, 0, -len);</br></code>
+							<code>translate(0, -len);</br></code>
+							<code>if (len > 4) {</br></code>
+							<code>push();</br></code>
+							<code>rotate(angle);</br></code>
+							<code>branch(len * 0.67);</br></code>
+							<code>pop();</br></code>
+							<code></br></code>
+							<code>push();</br></code>
+							<code>rotate(-angle);</br></code>
+							<code>branch(len * 0.67);</br></code>
+							<code>pop();</br></code>
+							<code>}</br></code>
+							<code>}</br></code>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					&copy; Kunal The Chandan. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../assets/js/skel.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+
+	</body>
+</html>
