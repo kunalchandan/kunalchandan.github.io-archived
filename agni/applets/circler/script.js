@@ -11,8 +11,8 @@ function setup() {
 	createCanvas(wid,hei);
 	frameRate(30);
 	background(0);
-	num = createSlider(0,10);
-	den = createSlider(0,10);
+	num = createSlider(0,10, 1.5);
+	den = createSlider(0,10, 10);
 	things.length = 12;
 	colorMode(HSB,TWO_PI, TWO_PI,TWO_PI);
 }
