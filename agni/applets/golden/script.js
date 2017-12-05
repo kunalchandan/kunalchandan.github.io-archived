@@ -4,35 +4,23 @@ var TRUE_GOLD = 1.61803398875;
 var GOLD = 1/TRUE_GOLD;
 var angle = 0;
 function setup() {
-	createCanvas(window.innerHeight, window.innerWidth);
+	createCanvas(800, 800);
 	noFill();
 }
 
 function draw() {
-	translate(width/5, height/5);
+	translate(50, 50);
 	angle = angle + .01;
 	background(51);
-	stroke(212,175,55);
-	square(Math.min(width, height)/5);
+	stroke(255);
+	square(200);
 }
 
 function square(len) {
 	rect(0, 0, len, len);
-	if (len > 20){
+	translate(len, len);
+	if (len > 2) {
 		push();
-		translate(len, len);
-		rotate(angle);
-		square(len * GOLD);
-		pop();
-
-		push();
-		translate(0, len);
-		rotate(angle);
-		square(len * GOLD);
-		pop();
-
-		push();
-		translate(len, 0);
 		rotate(angle);
 		square(len * GOLD);
 		pop();
